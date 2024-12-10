@@ -4,7 +4,7 @@ import in.abdulmajid.EmailSendDemo.Model.MailStructure;
 import in.abdulmajid.EmailSendDemo.Service.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-//restcont
+//restcontroller
 @RestController
 @RequestMapping("/mail")
 public class MailController {
@@ -14,6 +14,6 @@ public class MailController {
     public String sendMail(@PathVariable String mail, @RequestBody MailStructure mailStructure)
    {
      mailService.sendEmail(mail, mailStructure);
-       return "Mail send succfully";
+       return "Mail send successfully";
    }
 }
