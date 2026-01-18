@@ -14,6 +14,6 @@ public class MailController {
     public String sendMail(@PathVariable String mail, @RequestBody MailStructure mailStructure)
    {
      mailService.sendEmail(mail, mailStructure);
-       return "Mail send successfully";
+       return "Mail send successfully ok";
    }
 }
